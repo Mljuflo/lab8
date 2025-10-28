@@ -1,0 +1,85 @@
+/* Importar una fuente moderna desde Google Fonts (Opcional) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Usar una imagen de fondo inspirada en la referencia */
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal con efecto de vidrio */
+.glass-container {
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    backdrop-filter: blur(15px); /* El efecto de desenfoque clave */
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 600px;
+    padding: 30px 40px;
+    text-align: center;
+    color: #1a1a1a; /* Texto oscuro para contraste */
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #333;
+    margin: 5px 0 30px 0;
+}
+
+.menu h2 {
+    font-weight: 400;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    display: block;
+    background: rgba(255, 255, 255, 0.2);
+    color: #1a1a1a;
+    padding: 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu a:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+}
+
+footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 0.9em;
+    color: #444;
+}

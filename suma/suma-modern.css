@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Usamos la misma imagen de fondo */
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-direction: column; /* Para acomodar el enlace de volver */
+}
+
+/* Estilo para el contenedor con efecto vidrio */
+.glass-container {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    text-align: center;
+    color: #1f1f1f;
+}
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    color: #333;
+}
+
+input::placeholder {
+    color: #131313;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+button {
+    background: #333;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #000;
+    transform: translateY(-2px);
+}
+
+p#resultado {
+    margin-top: 25px;
+    font-size: 1.1em;
+    font-weight: 600;
+    min-height: 25px; /* Evita que el layout salte */
+}
+
+/* Estilo para el enlace de "Volver" */
+.back-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #1a1a1a;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
